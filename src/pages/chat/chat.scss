@@ -1,0 +1,99 @@
+page-chat {
+    .innerMessage{
+        display: inline-block;
+        padding: 5px 10px;
+        background-color: color($colors,'primary');
+        margin: 5px;
+        color: white;
+        border-radius: 15px;
+    }
+    .innerMessage.messageRight{
+        background-color: color($colors,'secondary');
+    }
+    .username{
+        font-weight: bold;
+        font-size: 80%;
+    }
+
+    .message{
+        font-size: 120%;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+
+    .elem button{
+        border-radius: 0px;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        widows: 100%;
+    }
+    .elem{
+        position: relative;
+        min-width: 40px;
+    }
+
+    div#footer div.elem:first-child{
+        flex-grow: 1;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+    
+    div#footer{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    ion-input{
+        padding-left: 15px;
+        font-size: 125%;
+    }
+
+    .message::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .message.special .innerMessage{
+        background: transparent;
+        color: darkgray;
+        font-size: 80%;
+        width: 100%;
+        float: none;
+        text-align: center;
+        position: relative;
+    }
+
+    .message.special .innerMessage:before{
+        content: '';
+        height: 2px;
+        background: #eee;
+        display: block;
+        top: 50%;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+    }
+    
+    .message.special .innerMessage .messageContent{
+        background: white;
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+    .messageLeft{
+        float: left;
+    }
+
+    .messageRight{
+        float: right;
+    }
+
+
+}

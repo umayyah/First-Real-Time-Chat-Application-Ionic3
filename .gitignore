@@ -34,4 +34,4 @@ $RECYCLE.BIN/
 Thumbs.db
 UserInterfaceState.xcuserstate
 
-credentials.ts
+src/app/credentials.ts
